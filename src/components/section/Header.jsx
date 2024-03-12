@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { CiBaseBall } from "react-icons/ci";
+import { CiBaseball } from "react-icons/ci";
 import { CiCoins1 } from "react-icons/ci";
 import { CiBoxes } from "react-icons/ci";
 import { CiBullhorn } from "react-icons/ci";
@@ -9,10 +9,10 @@ import { CiDumbbell } from "react-icons/ci";
 import { CiFries } from "react-icons/ci";
 import { CiMoneyBill } from "react-icons/ci";
 
-import { AiFillGithub } from "react-icons/ci";
-import { AiOutlineCodepen } from "react-icons/ci";
-import { AiFillYoutube } from "react-icons/ci";
-import { AiOutlineInstagram } from "react-icons/ci";
+import { AiFillGithub } from "react-icons/ai";
+import { AiOutlineCodepen } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 const Header = () => {
     return(
@@ -28,7 +28,7 @@ const Header = () => {
                 <ul className='menu'>
                     <li className='active'>
                         <a href='/'>
-                            <CiBaseBall /> 웹스토리보이
+                            <CiBaseball /> 웹스토리보이
                         </a>
                     </li>
                     <li>
@@ -97,22 +97,22 @@ const Header = () => {
             <div className='header__sns'>
                 <ul>
                     <li>
-                        <a href="https://github.com/webstoryboy"> rel="noopener noroferrer"
+                        <a href="https://github.com/webstoryboy" rel="noopener noroferrer">
                             <AiFillGithub />
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/webstoryboy"> rel="noopener noroferrer"
+                        <a href="https://github.com/webstoryboy" rel="noopener noroferrer">
                             <AiFillYoutube />
                         </a>
                     </li>
                     <li>
-                        <a href="https://codepen.io/webstoryboy"> rel="noopener noroferrer"
+                        <a href="https://codepen.io/webstoryboy" rel="noopener noroferrer">
                             <AiOutlineCodepen />
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/webstoryboy"> rel="noopener noroferrer"
+                        <a href="https://www.instagram.com/webstoryboy" rel="noopener noroferrer">
                             <AiOutlineInstagram />
                         </a>
                     </li>
