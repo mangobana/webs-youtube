@@ -3,7 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 import Header from './Header'
 import Footer from './Footer'
-import Search from './Search'
+import Search from '../contents/Search'
 
 const Main = ( props ) => {
     return (
