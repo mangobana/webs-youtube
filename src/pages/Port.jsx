@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Main from '../components/section/Main'
 
 import VideoCards from '../components/videos/VideoCards'
-import { portfolioText } from '../data/portfolio'
+import { youtubeText } from '../data/youtube'
 
-const Port = () => {
-    const [loading, setLoading] = useState(true);
+const Youtube = () => {
+    const [loading, setLoading] = useState(true); 
 
     useEffect(() => {
         setTimeout(() => {
@@ -13,21 +13,21 @@ const Port = () => {
         }, 300);
     }, []);
 
-    const portPageClass = loading ? 'isLoading' : 'isLoaded';
+    const youtubePageClass = loading ? 'isLoading' : 'isLoaded';
 
     return (
-        <Main
-         title="포트폴리오 사이트"
-         description="포트폴리오 사이트 튜토리얼 강의입니다.">
+        <Main 
+            title = "유튜브 사이트"
+            description="유튜브 사이트 튜토리얼 강의입니다.">
 
-            <section id='portPage' className={portPageClass}>
-                <h2>🫣 나만의 포트폴리오 사이트를 만들고 싶다면.</h2>
-                <div className='video__inner'>
-                    <VideoCards videos={portfolioText} />
+            <section id='youtubePage' className={youtubePageClass}>
+                <h2>😄 나만의 유튜브 사이트 만들기</h2>
+                <div className="video__inner">
+                    <VideoCards videos={youtubeText} />
                 </div>
             </section>
         </Main>
     )
 }
-    
-export default Port
+
+export default Youtube

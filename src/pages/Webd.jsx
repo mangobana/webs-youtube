@@ -5,7 +5,7 @@ import VideoCards from '../components/videos/VideoCards'
 import { webdText } from '../data/webd'
 
 const Webd = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true); 
 
     useEffect(() => {
         setTimeout(() => {
@@ -16,11 +16,11 @@ const Webd = () => {
     const webdPageClass = loading ? 'isLoading' : 'isLoaded';
 
     return (
-        <Main
-         title="웹디자인 기능사"
-         description="웹디자인 기능사 튜토리얼 강의입니다.">
-            
-            <section>
+        <Main 
+            title = "웹디자인 기능사"
+            description="웹디자인 기능사 튜토리얼 강의입니다.">
+
+            <section id='webdPage' className={webdPageClass}>
                 <h2>😄 웹디자인기능사 한번에 따자!</h2>
                 <div className="video__inner">
                     <VideoCards videos={webdText} />
@@ -29,5 +29,5 @@ const Webd = () => {
         </Main>
     )
 }
-    
+
 export default Webd

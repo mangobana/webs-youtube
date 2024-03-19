@@ -5,7 +5,7 @@ import VideoCards from '../components/videos/VideoCards'
 import { gsapText } from '../data/gsap'
 
 const Gsap = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true); 
 
     useEffect(() => {
         setTimeout(() => {
@@ -16,13 +16,13 @@ const Gsap = () => {
     const gsapPageClass = loading ? 'isLoading' : 'isLoaded';
 
     return (
-        <Main
-         title="GSAP 사이트"
-         description="GSAP 사이트 튜토리얼 강의입니다.">
-
+        <Main 
+            title = "GSAP 사이트"
+            description="GSAP 사이트 튜토리얼 강의입니다.">
+            
             <section id='gsapPage' className={gsapPageClass}>
                 <h2>😄 창의적 사이트를 만들고 싶다면!</h2>
-                <div className='video__inner'>
+                <div className="video__inner">
                     <VideoCards videos={gsapText} />
                 </div>
             </section>
